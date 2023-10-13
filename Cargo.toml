@@ -1,0 +1,22 @@
+[package]
+name = "tile-buffer"
+version = "0.1.0"
+authors = ["Andrey Tkachenko <andrey@aidev.ru>"]
+description = "Tiling Buffer useful when dealing with range requests"
+keywords = ["io", "buffer", "async", "tile", "range"]
+documentation = "https://docs.rs/tile-bufer"
+repository = "https://github.com/andreytkachenko/tile-buffer"
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+edition = "2021"
+
+[dependencies]
+arrayvec = "0.7.4"
+bytes = "1.5.0"
+futures = "0.3.28"
+parking_lot = "0.12.1"
+pin-project-lite = "0.2.13"
+tokio = "1.32.0"
+
+[dev-dependencies]
+tokio = { version = "1.32.0", features = ["full"] }
